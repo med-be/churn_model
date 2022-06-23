@@ -63,7 +63,7 @@ ChurnPrediction
                         <!-- Select output language here. -->
                         <div class="form-group">
                         </div>
-                        <button type="submit" class="btn btn-primary mb-2">Predict</button></br>
+                        <button type="submit" class="btn btn-primary mb-2">prédire</button></br>
                         </br>
                     </form>
                     <!-- Translated text returned by the Translate API is rendered here. -->
@@ -74,11 +74,11 @@ ChurnPrediction
                             <label for="translation-result">
 
                                 <blockquote class="blockquote">
-                                    <p class="mb-2">Prediction:</p>
+                                    <p class="mb-2">Prédiction:</p>
                                 </blockquote>
 
                             </label>
-                            <textarea readonly class="form-control" id="exTextarea" rows="5">{{ response }}</textarea>
+                            <input type="text" class="form-control" id="exTextarea" value="{{ response }}">
                         </div>
                     </form>
                 </div>
