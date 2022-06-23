@@ -31,60 +31,19 @@ ChurnPrediction
         </ul>
     </div>
 </nav>
-<div>
-    <!-- nav bar ends -->
 
-    <div class="container-fluid masthead">
-        <br>
-        <br>
-        <br>
-        <br>
-	<br>
-	<br>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <form method="POST">
-                        <!-- Input block-->
-                        <div class="form-group">
-                            <label for="translation">
-                                <blockquote class="blockquote">
-                                    <p class="mb-2">entrer les valeurs suivantes :</p>
-                                </blockquote>
-                            </label>
-                            <input class="form-control" type="text" name="number_vmail_messages" placeholder="number_vmail_messages" />
-                            <input class="form-control" type="text" name="total_day_calls" placeholder="total_day_calls" />
-                            <input class="form-control" type="text" name="total_eve_minutes" placeholder="total_eve_minutes" />
-                            <input class="form-control" type="text" name="total_eve_charge" placeholder="total_eve_charge" />
-                            <input class="form-control" type="text" name="total_intl_minutes" placeholder="total_intl_minutes" />
-                            <input class="form-control" type="text" name="number_customer_service_calls" placeholder="number_customer_service_calls" />
-                        </div>
-
-                        <!-- Select output language here. -->
-                        <div class="form-group">
-                        </div>
-                        <button type="submit" class="btn btn-primary mb-2">prédire</button></br>
-                        </br>
-                    </form>
-                    <!-- Translated text returned by the Translate API is rendered here. -->
-                </div>
-                <div class="col">
-                    <form>
-                        <div class="form-group">
-                            <label for="translation-result">
-
-                                <blockquote class="blockquote">
-                                    <p class="mb-2">Prédiction:</p>
-                                </blockquote>
-
-                            </label>
-                            <input type="text" class="form-control" id="exTextarea" value="{{ response }}">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
+    <div class="login">
+        <form>
+            <h3>Remplir les champs suivant:</h3>
+            <input  type="text" name="number_vmail_messages" placeholder="number_vmail_messages" />
+            <input  type="text" name="total_day_calls" placeholder="total_day_calls" />
+            <input  type="text" name="total_eve_minutes" placeholder="total_eve_minutes" />
+            <input  type="text" name="total_eve_charge" placeholder="total_eve_charge" />
+            <input  type="text" name="total_intl_minutes" placeholder="total_intl_minutes" />
+            <input  type="text" name="number_customer_service_calls" placeholder="number_customer_service_calls" />     
+        </form>
+        {{ response }}
+                       
         {% endblock body %}
 
         {% block custom_js %}
