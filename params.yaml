@@ -21,7 +21,7 @@ mlflow_config:
   remote_server_uri: http://localhost:1234
  
 random_forest: 
-  max_depth: 20
+  max_depth: 19
   n_estimators: 500
 
 model_dir: models/model.joblib
